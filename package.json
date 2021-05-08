@@ -4,6 +4,7 @@
   "description": "Application that tells you the bus stops for a given route and direction of the Minnesota Metro Transit Transportation",
   "main": "server.js",
   "scripts": {
+    "start": "cd client & npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
