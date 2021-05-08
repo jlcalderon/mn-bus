@@ -1,0 +1,24 @@
+{
+  "name": "mn-bus",
+  "version": "1.0.0",
+  "description": "Application that tells you the bus stops for a given route and direction of the Minnesota Metro Transit Transportation",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlcalderon/mn-bus.git"
+  },
+  "keywords": [
+    "Bus",
+    "Transportation",
+    "Minnesota"
+  ],
+  "author": "Jorge Calderon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlcalderon/mn-bus/issues"
+  },
+  "homepage": "https://github.com/jlcalderon/mn-bus#readme"
+}
