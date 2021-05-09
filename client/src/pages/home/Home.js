@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import Header from "../../components/header/Header";
 import "../../App.css";
 const Home = () => {
   const [routes, setRoutes] = useState([]);
   const [usrRoute, setUsrRoute] = useState(0);
+  let history = useHistory();
 
   useEffect(() => {
     console.log(usrRoute);
@@ -15,12 +17,17 @@ const Home = () => {
       .then((data) => setRoutes(data));
   }, []);
 
+  const submitHandler = (event) => {
+    event.preventDefault();
+    history.push(`/directions/${usrRoute}`);
+  };
+
   return (
     <div>
       <Header text="Welcome to MN Bus find out where to go to ride in the bus." />
       <div className="forms-container">
         <h1>1. Select a Route to Travel</h1>
-        <form className="forms">
+        <form className="forms" onSubmit={submitHandler}>
           <select
             className="form-control"
             onChange={(event) => {
