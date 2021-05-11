@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./pages/home/Home";
 import Directions from "./pages/directions/Directions";
+import Bustops from "./pages/bustops/Bustops";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/directions/:route">
             <Directions />
+          </Route>
+          <Route path="/bustops/:route/:direction">
+            <Bustops />
           </Route>
         </Switch>
       </Router>

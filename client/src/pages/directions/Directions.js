@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Header from "../../components/header/Header";
 import "../../App.css";
@@ -8,6 +8,7 @@ const Directions = () => {
   const [usrDirection, setUsrDirection] = useState("");
   let { route } = useParams();
   let headingText = `You selected the route: #${route}`;
+  let history = useHistory();
 
   useEffect(() => {
     fetch(`http://localhost:3001/Directions/${route}?format=json`)
@@ -24,14 +25,14 @@ const Directions = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    //history.push(`/bustops/${route}/${usrDirection}`);
+    history.push(`/bustops/${route}/${usrDirection}`);
   };
 
   return (
     <div>
       <Header text={headingText} />
       <div className="forms-container">
-        <h1>2. Select The Direction Where You Are Traveling.</h1>
+        <h1>2. Select The Direction From Where You Are Traveling.</h1>
         <form className="forms" onSubmit={submitHandler}>
           <select
             className="form-control"
