@@ -12,7 +12,7 @@ const Home = () => {
   }, [usrRoute]);
 
   useEffect(() => {
-    fetch("https://svc.metrotransit.org/nextrip/Routes?format=json")
+    fetch("http://localhost:3001/Routes?format=json")
       .then((response) => response.json())
       .then((data) => setRoutes(data));
   }, []);
