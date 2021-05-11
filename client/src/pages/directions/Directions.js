@@ -44,7 +44,7 @@ const Directions = () => {
               Choose a direction
             </option>
             {directions.map((direction) => (
-              <option key={direction.Value} value={direction.Text}>
+              <option key={direction.Value} value={direction.Value}>
                 {direction.Text}
               </option>
             ))}
