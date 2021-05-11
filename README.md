@@ -4,7 +4,7 @@
 
 ## Demo
 
-![Demo](./client/public/mn-bus.gif)
+![Demo](./client/public/MN-Bus.gif)
 
 ## Contents
 
@@ -29,6 +29,10 @@ This app is using the **MIT** license. Is open source and free. For more informa
 
 ## User_Stories
 
+- As a user, when I land in the first page of the app, I want to choose a route form a list of available routes of the Metro Transit Transportation, and after this click on a next button that redirect me to choose a direction from where I am traveling.
+
+- When I am in the second page I want to select a direction available of the route that I previously selected, when I select my direction I want to click on a next button to display the stops where I can go to get my next ride.
+
 ## Tech_Specs
 
 This app was developed with React JS functional components with the hooks aproach and is using the [react-router-dom] package to handle application routing and to handle state in components context this app rely on `useState` and `useEffect` hooks.
@@ -49,6 +53,8 @@ This app has a local server runnig in the background. On development enverironme
 To handle all node js server related functionalities such as api routes this app rely on `express` , `axios`, `dotenv` and `cors` to switch from Production to Development or viceversa, this app use `if-env`. To update while you develop this app rely on `concurrently` and `nodemon` devDependencies to stop and re run the server and client after any change made in the code base.
 
 For styling purposes I use plain CSS and I guide myself to make a decent and uniform UI by drawing a low fidelity wireframe and following this pattern in the main 4 components.
+
+![Wireframe](./client/public/mn-bus-wireframe.jpg)
 
 ## Assumptions_Made_in_Development
 
