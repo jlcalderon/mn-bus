@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header text="Welcome to MN Bus find out where to go to ride in the bus." />
+      <Header text="Welcome to MN Bus! Find out where to get a ride." />
       <div className="forms-container">
         <h1>1. Select a Route to Travel</h1>
         <form className="forms" onSubmit={submitHandler}>
