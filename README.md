@@ -82,7 +82,12 @@ To run this project on localhost follow these steps in order:
 
 ## Test
 
-Coming up...
+Tests made:
+
+1. Rendering the Home page component fetching routes from Metrotransit API
+
+Running test:
+In your terminal locate in the root directory of this project and then run the command: `npm test`.
 
 ## Contributing
 
